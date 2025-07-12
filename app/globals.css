@@ -1,0 +1,56 @@
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #E6CCB2;
+  --foreground: #171717;
+  --mainBrown: #7F5539;
+  --milkColor: #EDE0D4;
+  --brownColor1:#DDB892;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-: var(--font-leckerli-one);
+  /* --text-: var(--milkColor); */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --foreground: #ededed;
+  }
+}
+
+
+
+section{
+  margin-top: 32px;
+}
+
+li{
+  cursor: pointer;
+}
+
+li:hover,button:hover{
+  transition: all;
+  scale: 1.05;
+  color:var(--brownColor1);
+}
+
+@layer base {
+  body {
+    background: linear-gradient(to bottom, var(--milkColor), var(--background), var(--mainBrown));
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+  }
+  
+  
+}
