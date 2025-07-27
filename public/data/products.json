@@ -1,0 +1,15 @@
+[
+  { "id": 1, "image": "/images/neklace.svg", "productName": "Product 1" },
+  { "id": 2, "image": "/images/pearl3.svg", "productName": "Product 2" },
+  { "id": 3, "image": "/images/ring1.svg", "productName": "Product 3" },
+  { "id": 4, "image": "/images/ring2.svg", "productName": "Product 4" },
+  { "id": 5, "image": "/images/woman1.svg", "productName": "Product 5" },
+  { "id": 6, "image": "/images/neklace.svg", "productName": "Product 6" },
+  { "id": 7, "image": "/images/neklace.svg", "productName": "Product 7" },
+  { "id": 8, "image": "/images/neklace.svg", "productName": "Product 8" },
+  { "id": 9, "image": "/images/neklace.svg", "productName": "Product 9" },
+  { "id": 10, "image":"/images/neklace.svg", "productName": "Product 10" },
+  { "id": 11, "image": "/images/neklace.svg", "productName": "Product 11" },
+  { "id": 12, "image": "/images/neklace.svg", "productName": "Product 12" },
+  { "id": 13, "image": "/images/neklace.svg", "productName": "Product 13" }
+]

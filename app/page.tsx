@@ -1,19 +1,28 @@
 import Image from "next/image";
+import Link from "next/link";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
+  
   return (
     <div className=" font-[family-name:var(--font-leckerli-one)] "
    
      >
       <main 
       >
-       <section style={{margin:"0px"}}>
+       {/* <section style={{margin:"0px"}}>
        
         <div className="w-full  relative font-[family-name:var(--font-leckerli-one)]  text-white  h-screen">
            <header className=" absolute top-12 left-30">
           <nav >
             <ul className="   flex text-[24px]  gap-[47px]">
-              <li>Products</li>
+              <li >
+                <Link href='products/page.tsx'>
+                 Products
+                </Link>
+                
+               </li>
               <li>About us </li>
               <li>Contact</li>
               <li>Blog</li>
@@ -32,6 +41,10 @@ export default function Home() {
         </div>
                          <Image className=" absolute  z-2 top-30 right-30 w-[369px]" src='images/woman.svg' width={200} height={200}  alt="woman"/>
 
+       </section> */}
+
+       <section  style={{margin:"0px"}}>
+        <Header/>
        </section>
        <section className="px-30 mt-[132px] flex justify-center font-[family-name:var(--font-leckerli-one)]  text-[var(--mainBrown)]">
         <div className=" text-center w-3/4 ">
@@ -50,12 +63,12 @@ export default function Home() {
       </div>
       <div className=" text-center relative">
       <p className=" z-10 text-[var(--brownColor)]">Mova_collection, we believe jewelry is more than an accessory—it’s an expression of your unique story. Every piece in our collection is thoughtfully designed and responsibly crafted, combining timeless elegance with sustainable practices. Whether you’re celebrating a special moment or looking for something extraordinary to wear every day, Fairlight offers jewelry that resonates with meaning and beauty. Join us in embracing style with purpose.</p>
-      <h3 className=" absolute top-0 z-[-1] left-50   text-8xl text-[var(--milkColor)] ">Mova Collection</h3>
+      <p className=" absolute top-0 z-[-1] left-50   text-8xl text-[var(--milkColor)] ">Mova Collection</p>
       </div>
 </section>
 <section>
   <article className="text-center mt-32 px-30">
-    <h4 className=" text-[var(--mainBrown)] text-[52px]">Ethical Elegance</h4>
+    <h4 className=" text-[var(--mainBrown)] ]">Ethical Elegance</h4>
     <p className="text-[var(--brownColor)]"> Discover Timeless Jewelry That Reflects Your Values—Where Every Piece is Thoughtfully Designed, Responsibly Sourced, and Crafted to Celebrate Beauty, Integrity, and Sustainability.</p>
   </article>
 </section>
@@ -135,35 +148,8 @@ export default function Home() {
 
 </section>
       </main>
-      <footer className=" px-32  py-8 bg-[var(--mainBrown)]">
-
-
-
-      <div className="flex justify-between">
-        <div className="text-[var(--milkColor)] flex flex-col">
-       
-        
-          <p className="text-[64px]">Mova Collection</p>
-          <p className="text-[32px]">created by narmin mammadova</p>
-
-<small>All rights reserved &copy; 2025</small>
-        </div>
-        <div className="  flex flex-col gap-4 w-1/3 ">
-<textarea
-className="bg-[var(--milkColor)] px-4 w-full rounded-md border-1 border-amber-700"
-  name="message"
-  id="message"
-  placeholder="write your message..."
-  rows={4}
-  maxLength={500}
- 
-  required
   
-></textarea>         
- <button className=" w-full h-[48px] rounded-md bg-[var(--mainBrown)] border-1 border-[var(--milkColor)]">Send Email</button>
-        </div>
-      </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }   
