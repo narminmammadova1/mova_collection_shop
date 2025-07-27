@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
-const Card = ({product,prodId}) => {
+import { CardProps } from '@/types/interface';
+const Card:React.FC<CardProps> = ({product,prodId}) => {
   return (
     <div className='w-[300px] h-[400px] relative border-2 text-white border-amber-700 rounded-md'>
         <div className='w-full h-2/3 rounded-md bg-amber-200'>  

@@ -1,6 +1,6 @@
 // import { useRouter } from 'next/router'
-import Swiper from '@/app/Components/Swiper/swiper'
-import Image from 'next/image'
+// import Swiper from '@/app/Components/Swiper/swiper'
+// import Image from 'next/image'
 import React from 'react'
 
 const Details = () => {
