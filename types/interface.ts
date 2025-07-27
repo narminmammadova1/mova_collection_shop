@@ -2,12 +2,12 @@
 
 export interface ProductProps{
     image:string;
-    // prodId:number;
+    id?:number| undefined;
     productName:string
 }
 
 
 export interface CardProps{
   product:ProductProps;
-    prodId:number
+    prodId:number |undefined
 }

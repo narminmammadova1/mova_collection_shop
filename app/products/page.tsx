@@ -3,6 +3,7 @@
  import Header from '../Components/Header/Header'
 import Card from '../Components/Card/Card'
  import Footer from '../Components/Footer/Footer'
+import { ProductProps } from '@/types/interface'
 
 
 
@@ -29,7 +30,7 @@ export default async function ProductsPage() {
       </div>
 
       <section className='px-32 gap-16 grid grid-cols-3 justify-items-center '>
-        {products.map((product) => (
+        {products.map((product:ProductProps) => (
           <Card  prodId={product.id} key={product.id} product={product} />
         ))}
       </section>
@@ -37,7 +38,7 @@ export default async function ProductsPage() {
       <section className='px-32 flex flex-col'>
         <h2 className='text-center my-6'>Trending</h2>
         <div className='gap-16 grid grid-cols-3 justify-items-center '>
-          {products.slice(0, 3).map((product) => (
+          {products.slice(0, 3).map((product:ProductProps) => (
             <Card key={product.id} product={product} prodId={product.id} />
           ))}
         </div>
