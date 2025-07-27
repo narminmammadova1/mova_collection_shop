@@ -4,19 +4,20 @@
 import Card from '../Components/Card/Card'
  import Footer from '../Components/Footer/Footer'
 import { ProductProps } from '@/types/interface'
+import products from '@/public/data/products.json'; // path-i uyğun dəyiş
 
 
 
 
  
-async function getProducts() {
-  const res = await fetch('http://localhost:3000/data/products.json') 
-  if (!res.ok) throw new Error('data is not defined')
-  return res.json()
-}
+// async function getProducts() {
+//   const res = await fetch('http://localhost:3000/data/products.json') 
+//   if (!res.ok) throw new Error('data is not defined')
+//   return res.json()
+// }
 
 export default async function ProductsPage() {
-  const products = await getProducts()
+  // const products = await getProducts()
 
   
   return (
